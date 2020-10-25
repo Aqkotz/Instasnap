@@ -3,9 +3,6 @@ import Draggable from "react-draggable";
 
 
 export default class ProfileTile extends React.Component {
-    state = {
-        friended: false,
-    };
 
     constructor(props){
         super();
@@ -15,14 +12,17 @@ export default class ProfileTile extends React.Component {
         this.major = props.major;
         this.role = props.role;
         this.quote = props.quote;
+        this.friend = props.friend;
     }
+
+
 
     render() {
         return (
             <Draggable>
                 <div className="tileCard">
                     <h6 className="nameTitle">{this.name + " '" + this.year}</h6>
-                    <div><img src={this.pictureURL} alt="profile" width="75" height="75" className="profilePhoto"/></div>
+                    <img src={this.pictureURL} alt="profile" width="75" height="75" className="profilePhoto"/>
                     <div className="studentInfo">
                         <p className="subInfo"><b>{this.major}</b></p>
                         <p className="subInfo"><b>{this.role}</b></p>

@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h2 className="subtitle">Organize your friends into teams!</h2>
-        <h5 className="nameTitle">Drag and drop the tiles to arrange the teams.</h5>
+        <h4 className="nameTitle">Drag and drop the tiles to arrange the teams. Scroll down to find them.</h4>
         <TeamsRegion/>
         <TileRegion/>
       </header>

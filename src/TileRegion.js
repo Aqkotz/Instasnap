@@ -6,20 +6,22 @@ export default class TileRegion extends React.Component{
       users: []
     }
 
+    constructor(props){
+        super();
+        fetch(`./DALI_Data.json`, {
+            headers : { 
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+             }})
+             .then(response => response.json())
+             .then(data => {
+                 this.setState({users:data});
+             })
+    
+             console.log(this.state.users)
+    }
+
     render(){
-
-
-      fetch(`./DALI_Data.json`, {
-        headers : { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-         }})
-         .then(response => response.json())
-         .then(data => {
-             this.setState({users:data});
-         })
-
-         console.log(this.state.users)
       
 
         return(

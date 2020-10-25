@@ -68,9 +68,14 @@
 }
 
 .teamBox {
-  border: 5px dashed #2d6187;
+  border: 5px solid #61dafb;
   border-radius: 20px;
+  height: 350px;
+  width: 100%;
+}
+
+.teamContainer {
   float: left;
-  height: 400px;
-  width: 33ch;
+  width: 40ch;
+  margin: 10px;
 }
