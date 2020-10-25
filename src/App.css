@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #2d6187;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.tileCard {
+  background-color: #effad3;
+  width: 160px;
+  float: left;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+  margin: 5px;
+}
+
+.profilePhoto {
+  border-radius: 50%;
+  border: 5px solid #2d6187;
+}
+
+.nameTitle {
+  color: #28abb9;
+  margin: 5px;
+}
+
+.subInfo {
+  font-size: small;
+  color: #2d6187;
+  text-align: left;
+  margin: 10px;
+}
+
+.subtitle {
+  color: #effad3;
+}
+
+.teamBox {
+  border: 5px dashed #2d6187;
+  border-radius: 20px;
+  float: left;
+  height: 400px;
+  width: 33ch;
 }
